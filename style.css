@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;700&display=swap');
+
+:root{
+    --cyan : hsl(171, 66%, 44%);
+    --blue : hsl(233, 100%, 69%);
+    --dark-gray : hsl(210, 10%, 33%);
+    --light-gray : hsl(201, 11%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(images/bg-header-desktop.png) no-repeat;
+    background-size: 100%;
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/* utility classes */
+h1, h2,h3{color: var(--dark-gray);}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 16px;
+    color: var(--light-gray);
+    line-height: 30px;
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+}
+.download a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: 1px solid none;
+    border-radius: 50px;
+    font-size: 14px;
+}
+.ios{
+    background-color: var(--cyan);
+}
+.ios:hover{
+    background-color: hsl(171, 58%, 57%);
+}
+.mac{
+    background-color: var(--blue);
+}
+.mac:hover{
+    background-color: hsl(233, 86%, 72%);
+}
+
+#container{
+    padding: 100px;
+}
+
+/* header section */
+#header{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#header img{
+    width: 100px;
+}
+#header h1{
+    font-size: 40px;
+    margin: 40px 0 20px 0;
+}
+#header p{
+    margin-bottom: 20px;
+}
+
+/* feature section */
+#info{
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#info p{
+    margin-top: 20px;
+}
+
+/* details section */
+#details{
+    display: flex;
+    margin-bottom: 40px;
+}
+#details .mac-img{
+    position: relative;
+    right: 100px;
+    margin-right: 100px;
+}
+#details .mac-img img{
+    width: 115%;
+    height: 100%;
+}
+
+#details .feature{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#details .feature .item{
+    margin: 30px;
+}
+
+#details .feature .item h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* access section */
+#access{
+    text-align: center;
+}
+
+#access p{
+    width: 700px;
+    margin: 20px auto;
+}
+
+#access img{
+    width: 70%;
+    margin: 40px 0;
+}
+
+/* workflow section */
+#workflow{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#workflow p{
+    margin: 30px;
+}
+
+#workflow .tools{
+    margin: 30px 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#workflow .tools .item{
+    width: 400px;
+    height: auto;
+}
+
+#workflow .tools .item img{
+    width: 50px;
+    height: 40px;
+}
+
+#workflow .tools .item h3{
+    margin: 30px 0;
+}
+
+/* companies */
+#companies{
+    text-align: center;
+    margin: 40px;
+}
+
+#companies img{
+    margin: 40px;
+}
+
+/* available */
+#available{
+    width: 700px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+#available p{
+    margin: 30px;
+}
+
+/* footer */
+
+footer{
+    padding: 0 20px;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+.option{
+    margin: 40px 250px 40px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.option a{
+    text-decoration: none;
+    margin: 10px;
+    color: var(--dark-gray);
+}
+
+.option a:hover{
+    color: var(--cyan);
+}
+
+.social img{
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+}
+.social img:hover{
+    cursor: pointer;
+}
+
+.attribution{
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.attribution a{
+    text-decoration: none;
+    color:hsl(171, 66%, 44%);
+}
